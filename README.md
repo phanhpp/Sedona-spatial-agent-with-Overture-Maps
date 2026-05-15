@@ -48,7 +48,7 @@ Create a `.env` (or export) with:
 Optional, for loading data from S3 and for Spark/S3 access:
 
 - `S3_ENRICHED_BASE` — e.g. `s3a://your-bucket/enriched`
-- `AWS_PROFILE` or AWS credentials in env (see [notes/setup_github_actions.md](notes/setup_github_actions.md) for local and CI)
+- `AWS_PROFILE` or AWS credentials in env
 
 **3. Run a query**
 
@@ -104,7 +104,7 @@ pytest tests/ -v -m "not integration"
 pytest tests/ -v
 ```
 
-CI (GitHub Actions) runs tests with `-m "not integration"` and optional Docker build/push; see [.github/workflows/test_sedona.yml](.github/workflows/test_sedona.yml) and [notes/setup_github_actions.md](notes/setup_github_actions.md).
+CI (GitHub Actions) runs tests with `-m "not integration"` and optional Docker build/push; see [.github/workflows/test_sedona.yml](.github/workflows/test_sedona.yml).
 
 ---
 
